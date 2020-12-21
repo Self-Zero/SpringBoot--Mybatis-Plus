@@ -17,9 +17,13 @@ public class UserController {
     @Autowired
     private UserService userInfoService;
 
+    /**
+     * 自定义查询
+     * @return
+     */
     @RequestMapping("/a")
-    public List<UserInfoDomain> getA(){
-        List<UserInfoDomain> a = userInfoService.getA();
+    public List<UserInfoDomain> getUserInfo(){
+        List<UserInfoDomain> a = userInfoService.getUserInfo();
         return a;
     }
 

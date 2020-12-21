@@ -16,6 +16,6 @@ import java.util.List;
 public interface UserMapper extends BaseMapper<UserInfoDomain> {
 
     @Select("select * from user_info")
-    List<UserInfoDomain> getA();
+    List<UserInfoDomain> getUserInfo();
 
 }

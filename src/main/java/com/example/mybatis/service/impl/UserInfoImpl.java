@@ -23,8 +23,8 @@ public class UserInfoImpl extends ServiceImpl<UserMapper,UserInfoDomain> impleme
     private UserMapper userMapper;
 
     @Override
-    public List<UserInfoDomain> getA() {
-        List<UserInfoDomain> a = userMapper.getA();
+    public List<UserInfoDomain> getUserInfo() {
+        List<UserInfoDomain> a = userMapper.getUserInfo();
         return a;
     }
 }
